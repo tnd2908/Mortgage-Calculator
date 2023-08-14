@@ -23,7 +23,7 @@ const useIntroBlocks = () => {
         return data.allContentfulIconIntroBlock.nodes.map((block : any) => ({
             title: block.title,
             description: block.description.description,
-            icon: window.location.origin + block.icon.publicUrl,
+            icon: block.icon.publicUrl,
         }))
     }
     return [];

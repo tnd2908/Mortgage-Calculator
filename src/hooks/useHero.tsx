@@ -22,7 +22,7 @@ const useHero = () => {
             title: data.allContentfulHeroComponent.nodes[0].title as string,
             description: data.allContentfulHeroComponent.nodes[0].description.description as string,
             button: data.allContentfulHeroComponent.nodes[0].button as string,
-            imageUrl: window.location.origin + data.allContentfulHeroComponent.nodes[0].backgroundImage.publicUrl as string
+            imageUrl: data.allContentfulHeroComponent.nodes[0].backgroundImage.publicUrl as string
         }
     }
     const result = { 
