@@ -28,8 +28,8 @@ const Hero = ({ hero }: { hero: HeroModel }) => {
 
                 <motion.p
                     className='opacity-80 max-w-[410px] text-white my-8'
-                    initial={{ translateX: '300px' }}
-                    animate={{ translateX: 0 }}
+                    initial={{ translateX: '300px', opacity: 0 }}
+                    animate={{ translateX: 0, opacity: 1 }}
                     transition={{
                         type: "spring",
                         stiffness: 260,
